@@ -4,7 +4,7 @@
       <a href="/" class="navbar-brand">Y.Küçükçınar</a>
       <div class="navbar-nav mr-auto">
         <li class="nav-item">
-          <router-link to="/" class="nav-link">
+          <router-link v-if="currentUser" to="/" class="nav-link">
             <font-awesome-icon icon="home" /> Profile
           </router-link>
         </li>
