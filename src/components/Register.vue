@@ -99,7 +99,7 @@ export default {
   },
   mounted() {
     if (this.loggedIn) {
-      this.$router.push("/profile");
+      this.$router.push("/products");
     }
   },
   methods: {
@@ -110,7 +110,7 @@ export default {
 
       this.$store.dispatch("auth/register", user).then(
         (data) => {
-          this.$router.push("/Login");
+          this.$router.push("/products");
           this.message = data.message;
           this.successful = true;
           this.loading = false;
